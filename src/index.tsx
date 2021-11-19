@@ -5,10 +5,12 @@ import App from './App';
 import theme from './theme';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { BrowserRouter as Router } from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Router>
         <App />
       </Router>
